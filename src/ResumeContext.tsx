@@ -44,8 +44,9 @@ export type ResumeJson = {
 
 const ResumeContext = createContext<ResumeJson | undefined>(undefined);
 
-export function useResumeContext() {
+export function useResumeContext(): ResumeJson {
     const context = useContext(ResumeContext);
+    if (!context) throw new Error("Resume should be loaded");
     return context;
 }
 
