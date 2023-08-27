@@ -4,6 +4,7 @@ import { useResumeContext } from "./ResumeContext";
 import Header from "./Header";
 import Experience from "./Experience";
 import Skills from "./Skills";
+import Projects from "./Projects";
 
 export default function App() {
     let content;
@@ -15,6 +16,7 @@ export default function App() {
                 <Header />
                 <Experience />
                 <Skills />
+                <Projects />
             </div>
         );
     } catch (e) {
