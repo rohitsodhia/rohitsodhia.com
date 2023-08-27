@@ -30,8 +30,11 @@ export default function Experience() {
                 className="my-2 pb-2 border-b border-b-gray-300 last:border-none"
             >
                 <div className="text-lg">
-                    <div>{job.company}</div>
-                    <div>{job.position}</div>
+                    <div className="font-bold">{job.company}</div>
+                    <div className={`${!shown[i] && "hidden"}`}>
+                        {job.location}
+                    </div>
+                    <div className="italic">{job.position}</div>
                 </div>
                 <div className="text-sm text-gray-400 uppercase font-['Open_Sans']">
                     {job.tenure}
