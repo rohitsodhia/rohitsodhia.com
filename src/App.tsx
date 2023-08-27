@@ -3,6 +3,7 @@ import "./App.css";
 import { useResumeContext } from "./ResumeContext";
 import Header from "./Header";
 import Experience from "./Experience";
+import Skills from "./Skills";
 
 export default function App() {
     let content;
@@ -13,6 +14,7 @@ export default function App() {
             <div className="m-2 md:max-w-screen-md md:mx-auto">
                 <Header />
                 <Experience />
+                <Skills />
             </div>
         );
     } catch (e) {
