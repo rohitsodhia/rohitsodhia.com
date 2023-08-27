@@ -5,6 +5,7 @@ import Header from "./Header";
 import Experience from "./Experience";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import TechnicalPositions from "./TechnicalPositions";
 
 export default function App() {
     let content;
@@ -17,6 +18,7 @@ export default function App() {
                 <Experience />
                 <Skills />
                 <Projects />
+                <TechnicalPositions />
             </div>
         );
     } catch (e) {
