@@ -19,12 +19,12 @@ export default function Projects() {
     const projects = resume.projects.map((project, i) => {
         const detailsShown = twMerge(
             !shown[i] && "hidden",
-            "text-sm mt-2 text-gray-600"
+            "text-sm mt-2 text-gray-600 md:inline"
         );
         return (
             <div
                 key={i}
-                className="my-2 pb-2 border-b border-b-gray-300 last:border-none"
+                className="my-2 sm:my-4 pb-2 sm:pb-4 border-b border-b-gray-300 last:border-none"
             >
                 <div className="text-lg">
                     <div className="font-bold">{project.title}</div>
@@ -34,7 +34,7 @@ export default function Projects() {
                     <div>{project.blurb}</div>
                 </div>
                 <div
-                    className="mt-2 text-sm"
+                    className="mt-2 text-sm md:hidden"
                     onClick={() => toggleProjectDetails(i)}
                 >
                     {!shown[i] ? "More..." : "Less..."}
@@ -44,7 +44,7 @@ export default function Projects() {
     });
 
     return (
-        <div className="mt-6">
+        <div className="mt-6 md:mt-0">
             <h2 className="text-sm">Projects</h2>
             <div>{projects}</div>
         </div>

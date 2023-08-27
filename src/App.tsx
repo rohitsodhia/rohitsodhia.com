@@ -13,10 +13,12 @@ export default function App() {
         const resume = useResumeContext();
 
         content = (
-            <div className="m-2 md:max-w-screen-md md:mx-auto">
+            <div className="m-2 sm:m-4 md:max-w-screen-md md:mx-auto">
                 <Header />
-                <Experience />
-                <Skills />
+                <div className="sm:flex">
+                    <Experience />
+                    <Skills />
+                </div>
                 <Projects />
                 <TechnicalPositions />
             </div>

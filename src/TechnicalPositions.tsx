@@ -20,7 +20,7 @@ export default function TechnicalPositions() {
     );
 
     return (
-        <div className="mt-6">
+        <div className="mt-6 md:mt-0">
             <h2 className="text-sm">Technical Positions</h2>
             <div>{technical_positions}</div>
         </div>

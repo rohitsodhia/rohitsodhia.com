@@ -4,14 +4,16 @@ export default function Header() {
     const resume = useResumeContext();
 
     return (
-        <div className="md:flex">
-            <div>
-                <h1 className="text-3xl font-bold">Rohit Sodhia</h1>
-                <div className="text-xl mt-1">Software Engineer</div>
-            </div>
-            <div className="mt-2 md:flex md:justify-self-end font-bold">
-                <div>{resume?.location}</div>
-                <div></div>
+        <div>
+            <div className="sm:flex">
+                <div className="grow">
+                    <h1 className="text-3xl font-bold">Rohit Sodhia</h1>
+                    <div className="text-xl mt-1">Software Engineer</div>
+                </div>
+                <div className="mt-2 sm:justify-self-end font-bold">
+                    <div>{resume?.location}</div>
+                    <div></div>
+                </div>
             </div>
             <div className="mt-3">
                 Full stack software engineer, dominantly in backend

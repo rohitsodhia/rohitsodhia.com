@@ -19,7 +19,7 @@ export default function Experience() {
     const experience = resume?.experience.map((job, i) => {
         const detailsShown = twMerge(
             !shown[i] && "hidden",
-            "text-sm mt-2 text-gray-600"
+            "text-sm mt-2 text-gray-600 md:inline"
         );
         const jobPoints = job.points.map((point, pi) => (
             <li key={pi}>{point}</li>
@@ -27,14 +27,20 @@ export default function Experience() {
         return (
             <div
                 key={i}
-                className="my-2 pb-2 border-b border-b-gray-300 last:border-none"
+                className="my-2 sm:my-4 pb-2 sm:pb-4 border-b border-b-gray-300 last:border-none"
             >
                 <div className="text-lg">
-                    <div className="font-bold">{job.company}</div>
-                    <div className={`${!shown[i] && "hidden"}`}>
+                    <div className="font-bold sm:inline-block">
+                        {job.company}
+                    </div>
+                    <div className={`${!shown[i] && "hidden"} sm:inline-block`}>
+                        <span className="hidden sm:inline">, </span>
                         {job.location}
                     </div>
-                    <div className="italic">{job.position}</div>
+                    <div className="italic md:inline-block">
+                        <span className="hidden md:inline"> &mdash; </span>
+                        {job.position}
+                    </div>
                 </div>
                 <div className="text-sm text-gray-400 uppercase font-['Open_Sans']">
                     {job.tenure}
@@ -46,7 +52,7 @@ export default function Experience() {
                     </ul>
                 </div>
                 <div
-                    className="mt-2 text-sm"
+                    className="mt-2 text-sm md:hidden"
                     onClick={() => toggleJobDetails(i)}
                 >
                     {!shown[i] ? "More..." : "Less..."}
@@ -56,7 +62,7 @@ export default function Experience() {
     });
 
     return (
-        <div className="mt-6">
+        <div className="mt-6 sm:grow sm:mr-6">
             <h2 className="text-sm">Experience</h2>
             <div>{experience}</div>
         </div>
