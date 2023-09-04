@@ -93,6 +93,10 @@
         {
             "title": "Gamers' Plane",
             "tag": "RPG Play-by-Post Website",
+            "code": {
+                "title": "Github",
+                "link": "https://github.com/rohitsodhia/gamersplane.v1"
+            },
             "blurb": "Gamers’ Plane is a website that runs on a PHP API drawing from a MySQL and MongoDB database, feeding an AngularJS frontend. It’s currently being refactored to use FastAPI and NextJS frontend, adding a Redis cache, powered by Docker. It is a solo project, in which I do development, design, marketing, etc, and averages about 500 users a day."
         }
     ],

@@ -16,3 +16,12 @@ h2 {
     font-weight: bold;
     font-size: theme("fontSize.sm");
 }
+
+a {
+    color: theme("colors.red.800");
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}

@@ -20,9 +20,15 @@ export type ExperienceJson = {
     points: string[];
 };
 
+type ProjectLink = {
+    title: string;
+    link: string;
+};
+
 export type ProjectJson = {
     title: string;
     tag: string;
+    code: ProjectLink;
     blurb: string;
 };
 

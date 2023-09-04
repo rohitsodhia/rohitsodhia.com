@@ -30,6 +30,16 @@ export default function Projects() {
                     <div className="font-bold">{project.title}</div>
                     <div className="italic">{project.tag}</div>
                 </div>
+                <div className="text-sm mb-2">
+                    <span className="text-red-800">&#128279;&nbsp;</span>
+                    <a
+                        href={project.code.link}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        {project.code.title}
+                    </a>
+                </div>
                 <div className={detailsShown}>
                     <div>{project.blurb}</div>
                 </div>
