@@ -21,6 +21,22 @@ export default function App() {
                 </div>
                 <Projects />
                 <TechnicalPositions />
+                <div className="mt-6 md:mt-0">
+                    <h2 className="text-sm">Education</h2>
+                    <div className="text-lg">
+                        <div className="font-bold md:inline">
+                            Rutgers University, School of Engineering
+                        </div>
+                        <div className="md:inline-block">
+                            <span className="hidden md:inline">, </span>
+                            New Brunswick, NJ
+                            <span className="hidden md:inline"> &mdash; </span>
+                        </div>
+                        <div className="italic md:inline">
+                            B.S. Biomedical Engineering
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     } catch (e) {
