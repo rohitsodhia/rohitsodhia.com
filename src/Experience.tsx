@@ -30,14 +30,12 @@ export default function Experience() {
                 className="my-2 sm:my-4 pb-2 sm:pb-4 border-b border-b-gray-300 last:border-none"
             >
                 <div className="text-lg">
-                    <div className="font-bold sm:inline-block">
-                        {job.company}
-                    </div>
-                    <div className={`${!shown[i] && "hidden"} sm:inline-block`}>
+                    <div className="font-bold sm:inline">{job.company}</div>
+                    <div className={`${!shown[i] && "hidden"} sm:inline`}>
                         <span className="hidden sm:inline">, </span>
                         {job.location}
                     </div>
-                    <div className="italic md:inline-block">
+                    <div className="italic md:inline">
                         <span className="hidden md:inline"> &mdash; </span>
                         {job.position}
                     </div>
