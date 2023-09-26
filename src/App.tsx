@@ -6,6 +6,7 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import TechnicalPositions from "./TechnicalPositions";
+import GithubFlag from "./GithubFlag";
 
 export default function App() {
     let content;
@@ -14,6 +15,7 @@ export default function App() {
 
         content = (
             <div className="m-2 sm:m-4 md:max-w-screen-md md:mx-auto">
+                <GithubFlag />
                 <Header />
                 <div className="sm:flex">
                     <Experience />
