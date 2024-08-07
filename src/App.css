@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    h2 {
+        @apply text-center bg-gray-200 text-blue text-xl my-2 font-bold;
+    }
+}

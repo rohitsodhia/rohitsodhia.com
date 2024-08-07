@@ -16,41 +16,30 @@ export default function Experience() {
         setShown(newShown);
     };
 
-    const experience = resume?.experience.map((job, i) => {
+    const experience = resume.experience.map((job, i) => {
         const detailsShown = twMerge(
             !shown[i] && "hidden",
-            "text-sm mt-2 text-gray-600 md:inline"
+            "text-sm mt-2 md:inline"
         );
         const jobPoints = job.points.map((point, pi) => (
-            <li key={pi}>{point}</li>
+            <li key={pi} className="my-1">
+                <span className="font-bold">{point.title}: </span> {point.point}
+            </li>
         ));
         return (
-            <div
-                key={i}
-                className="my-2 sm:my-4 pb-2 sm:pb-4 border-b border-b-gray-300 last:border-none"
-            >
-                <div className="text-lg">
-                    <div className="font-bold sm:inline">{job.company}</div>
-                    <div className={`${!shown[i] && "hidden"} sm:inline`}>
-                        <span className="hidden sm:inline">, </span>
-                        {job.location}
-                    </div>
-                    <div className="italic md:inline">
-                        <span className="hidden md:inline"> &mdash; </span>
-                        {job.position}
-                    </div>
+            <div key={i} className="my-2 sm:my-4">
+                <div className="flex text-blue font-bold">
+                    <div className="text-lg flex-grow">{job.company}</div>
+                    <div className="self-end">{job.tenure}</div>
                 </div>
-                <div className="text-sm text-gray-400 uppercase font-['Open_Sans']">
-                    {job.tenure}
-                </div>
+                <div className="italic text-sm">{job.position}</div>
                 <div className={detailsShown}>
-                    <div>{job.blurb}</div>
-                    <ul className="mt-2 ml-4 list-inside list-disc">
+                    <ul className="mt-2 ml-6 list-outside list-disc">
                         {jobPoints}
                     </ul>
                 </div>
                 <div
-                    className="mt-2 text-sm md:hidden"
+                    className="mt-2 text-sm md:hidden cursor-pointer"
                     onClick={() => toggleJobDetails(i)}
                 >
                     {!shown[i] ? "More..." : "Less..."}
@@ -60,8 +49,8 @@ export default function Experience() {
     });
 
     return (
-        <div className="mt-6 sm:grow sm:mr-6">
-            <h2 className="text-sm">Experience</h2>
+        <div className="mt-6 sm:grow">
+            <h2>Experience</h2>
             <div>{experience}</div>
         </div>
     );
