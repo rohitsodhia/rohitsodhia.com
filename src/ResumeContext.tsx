@@ -7,8 +7,10 @@ import {
 } from "react";
 
 export type SkillJson = {
-    skill: string;
-    strength: number;
+    languages: string[];
+    infrastructure: string[];
+    project_management: string[];
+    general: string[];
 };
 
 export type ExperienceJson = {
@@ -17,7 +19,7 @@ export type ExperienceJson = {
     position: string;
     tenure: string;
     blurb: string;
-    points: string[];
+    points: { title: string; point: string }[];
 };
 
 type ProjectLink = {
@@ -25,26 +27,21 @@ type ProjectLink = {
     link: string;
 };
 
-export type ProjectJson = {
+export type AdditionalExperienceJson = {
     title: string;
-    tag: string;
-    code: ProjectLink;
-    blurb: string;
-};
-
-export type TechnicalPositionsJson = {
-    title: string;
-    role: string;
-    blurb: string;
+    tag?: string;
+    role?: string;
+    code?: ProjectLink;
+    blurb?: string;
 };
 
 export type ResumeJson = {
     title: string;
-    location: string;
-    skills: SkillJson[];
+    email: string;
+    linkedin: string;
+    skills: SkillJson;
     experience: ExperienceJson[];
-    projects: ProjectJson[];
-    technical_positions: TechnicalPositionsJson[];
+    additional_experience: AdditionalExperienceJson[];
 };
 
 const ResumeContext = createContext<ResumeJson | undefined>(undefined);

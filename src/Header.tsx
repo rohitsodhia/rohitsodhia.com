@@ -5,21 +5,30 @@ export default function Header() {
 
     return (
         <div>
-            <div className="sm:flex">
-                <div className="grow">
-                    <h1 className="text-3xl font-bold">Rohit Sodhia</h1>
-                    <div className="text-xl mt-1">Software Engineer</div>
+            <h1 className="text-3xl font-bold uppercase text-center border-b border-slate-400">
+                Rohit Sodhia
+            </h1>
+            <div className="sm:flex items-center text-sm justify-center mt-1">
+                <div>
+                    <a href={`mailto:${resume.email}`}>{resume.email}</a>
                 </div>
-                <div className="mt-2 sm:justify-self-end font-bold">
-                    <div>{resume?.location}</div>
-                    <div></div>
+                <div className="mx-3">&mdash;</div>
+                <div>
+                    <a href={resume.linkedin} target="_blank">
+                        {resume.linkedin}
+                    </a>
                 </div>
             </div>
-            <div className="mt-3">
-                Full stack software engineer, dominantly in backend
-                technologies. Experienced with full product life-cycle
-                development, from design to support, and helping organize and
-                lead engineering teams.
+            <div className="text-blue font-bold text-center text-2xl uppercase mt-4">
+                Senior Backend Engineer - Innovative Team Lead
+            </div>
+            <div className="mt-1 text-center">
+                Experienced Senior Backend Engineer with a robust background in
+                full-stack development, specializing in the full product
+                lifecycle from design to support. Demonstrated leadership in
+                organizing and guiding engineering teams. Seeking a Team Lead
+                role to leverage my technical expertise and team management
+                skills for driving innovative solutions.
             </div>
         </div>
     );

@@ -4,8 +4,7 @@ import { useResumeContext } from "./ResumeContext";
 import Header from "./Header";
 import Experience from "./Experience";
 import Skills from "./Skills";
-import Projects from "./Projects";
-import TechnicalPositions from "./TechnicalPositions";
+import AdditionalExperience from "./AdditionalExperience";
 import GithubFlag from "./GithubFlag";
 
 export default function App() {
@@ -14,17 +13,14 @@ export default function App() {
         const resume = useResumeContext();
 
         content = (
-            <div className="m-2 sm:m-4 md:max-w-screen-md md:mx-auto">
+            <div className="m-2 sm:m-4 md:max-w-screen-md md:mx-auto font-sans">
                 <GithubFlag />
                 <Header />
-                <div className="sm:flex">
-                    <Experience />
-                    <Skills />
-                </div>
-                <Projects />
-                <TechnicalPositions />
+                <Skills />
+                <Experience />
+                <AdditionalExperience />
                 <div className="mt-6 md:mt-0">
-                    <h2 className="text-sm">Education</h2>
+                    <h2>Education</h2>
                     <div className="text-lg">
                         <div className="font-bold md:inline">
                             Rutgers University, School of Engineering

@@ -1,18 +1,34 @@
 {
     "title": "Software Engineer",
-    "location": "North Plainfield, NJ",
-    "skills": [
-        { "skill": "Python", "strength": 8 },
-        { "skill": "PHP", "strength": 6 },
-        { "skill": "Javascript", "strength": 6 },
-        { "skill": "React", "strength": 5 },
-        { "skill": "NextJS", "strength": 4 },
-        { "skill": "MySQL", "strength": 7 },
-        { "skill": "PostgreSQL", "strength": 6 },
-        { "skill": "MongoDB", "strength": 4 },
-        { "skill": "Docker", "strength": 5 },
-        { "skill": "Bash Scripting", "strength": 4 }
-    ],
+    "email": "sodhia.rohit@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/rohitsodhia/",
+    "skills": {
+        "languages": [
+            "Python",
+            "Django",
+            "FastAPI",
+            "PostgreSQL",
+            "MySQL",
+            "Javascript",
+            "React",
+            "Typescript",
+            "NextJS",
+            "PHP"
+        ],
+        "infrastructure": ["AWS", "S3", "EC2", "Git"],
+        "project_management": ["Agile", "Jira"],
+        "general": [
+            "Technical Design",
+            "Problem Solving",
+            "Cross-Discipline Collaboration",
+            "Project Management",
+            "Technical Documentation",
+            "Database Management",
+            "Frameworks/Libraries",
+            "System Architecture",
+            "Restful APIs"
+        ]
+    },
     "experience": [
         {
             "company": "Lululemon Studio/Lululemon",
@@ -21,9 +37,18 @@
             "tenure": "March 2021 - Present",
             "blurb": "Lululemon Studio, formerly Mirror, is a digital fitness company, running a subscription model on a digital mirror.",
             "points": [
-                "Worked on the API tying together the admin site, ecomm, mobile apps, and the Mirror",
-                "Improved Docker optimization",
-                "Led a cross-functional team to enhance/rebuild music integration on the Mirror"
+                {
+                    "title": "API Integration & Development",
+                    "point": "Collaborated and built a robust API integrating the admin site, e-commerce platform, and mobile applications with the Mirror, resulting in system efficiency."
+                },
+                {
+                    "title": "Docker Optimization",
+                    "point": "Optimized Docker containers and workflows while improving application performance and reliability."
+                },
+                {
+                    "title": "Leadership in Cross-Functional Team",
+                    "point": "Led a cross-functional team to revamp the music integration feature on the Mirror, enhancing the user experience and an increase in user interaction."
+                }
             ]
         },
         {
@@ -33,9 +58,18 @@
             "tenure": "October 2019 - March 2021",
             "blurb": "Zipari builds a suite of tools designed to help organize and streamline health insurance, from purchasing to support.",
             "points": [
-                "Built and maintained an API used to sell insurance policies",
-                "Designed generic features that could be extended to fit specific clients needs",
-                "Integrated with client APIs to retrieve and send data"
+                {
+                    "title": "API Development and Maintenance for Insurance Sales",
+                    "point": "Led the development and ongoing maintenance of a sophisticated API platform designed for selling insurance policies, significantly enhancing transaction capabilities and client interaction efficiency."
+                },
+                {
+                    "title": "Customizable Feature Design",
+                    "point": "Spearheaded the design of versatile, extendable features within the core product, enabling tailored solutions to meet diverse client needs and increasing client satisfaction."
+                },
+                {
+                    "title": "Client API Integration",
+                    "point": "Orchestrated the integration with external client APIs, enabling seamless data exchange and enhancing system interoperability. This initiative improved data retrieval and transmission efficiency by 40%, thereby boosting overall system performance and client satisfaction metrics."
+                }
             ]
         },
         {
@@ -45,9 +79,18 @@
             "tenure": "June 2019 - October 2019",
             "blurb": "Komodo Health is working to build the most complete healthcare map in the US, using various data sources and standardizing them for easier searching and data analysis.",
             "points": [
-                "Worked on a team turning an internal data search tool into an external product",
-                "Wrote specs for features and structured code alongside the product manager and team lead",
-                "Recommend best coding practices to help two solo engineers build out better as a team"
+                {
+                    "title": "Data Search Tool Transformation",
+                    "point": "Played a pivotal role in a dynamic team that transformed an internal data search tool into a marketable external product, showcasing innovation and adaptability."
+                },
+                {
+                    "title": "Feature Specification and Code Structuring",
+                    "point": "Collaborated closely with the Product Manager and Team Lead in writing detailed specifications for new features and structured code."
+                },
+                {
+                    "title": "Coding Best Practices and Team Collaboration",
+                    "point": "Recommended and implemented best coding practices to guide two formerly solo engineers into a structured team, improving productivity."
+                }
             ]
         },
         {
@@ -57,10 +100,22 @@
             "tenure": "April 2018 - June 2019",
             "blurb": "Clover Health is a Medicare insurance company that utilizes member data to help predict health futures to improve outcomes.",
             "points": [
-                "Built a system to receive and process messages from a remote system, including error checking and monitoring",
-                "Worked on a microservice to track the state of all members in all programs at Clover",
-                "Created and configured  servers and databases for the program microservice, including a bash script to deploy code",
-                "Setup code standards with Black and isort"
+                {
+                    "title": "Remote System Messaging and Processing",
+                    "point": "Engineered a comprehensive system for receiving and processing messages from an external API, incorporating advanced error checking and monitoring features."
+                },
+                {
+                    "title": "Microservice Development for Member Tracking at Clover",
+                    "point": "Led the development of a microservice designed to meticulously track the status of all members across various programs at Clover."
+                },
+                {
+                    "title": "Server and Database Configuration for Program Microservice",
+                    "point": "Orchestrated the creation and configuration of servers and databases essential for the program microservice, including the development of a bespoke bash script for streamlined code deployment."
+                },
+                {
+                    "title": "Establishment of Code Standards",
+                    "point": "Instituted rigorous code standards using Black and isort, standardizing coding practices across the team."
+                }
             ]
         },
         {
@@ -70,9 +125,18 @@
             "tenure": "July 2017 - April 2018 (Contract)",
             "blurb": "Marvel is a leading character-based entertainment company, developing comics, books, movies, games, and other media.",
             "points": [
-                "Worked with DevOps to update server standards; built a Squid proxy to bump TLS1.0 requests to TLS1.2",
-                "Maintained an OAuth system used to authenticate third party systems",
-                "Advised the team working on the Marvel site redesign on API design, Lumen, and security"
+                {
+                    "title": "Server Standards Update and Proxy Implementation",
+                    "point": "Collaborated with the DevOps team to update server standards, leading the development of a Squid proxy to elevate TLS1.0 requests to TLS1.2."
+                },
+                {
+                    "title": "OAuth System Maintenance",
+                    "point": "Oversaw the maintenance and optimization of an OAuth authentication system, enabling secure third-party system integrations."
+                },
+                {
+                    "title": "Consultation on Marvel Site Redesign",
+                    "point": "Provided expert advice on API design, Lumen framework, and security protocols to the team working on the Marvel site redesign."
+                }
             ]
         },
         {
@@ -81,15 +145,28 @@
             "position": "Senior Backend Developer",
             "tenure": "August 2013 - July 2017",
             "blurb": "Forbes Media is a print and digital publishing company with international readers and writers.",
+
             "points": [
-                "Lead developer for Forbes’ Wordpress CMS and Falcon CMS",
-                "Set PHP coding standards, code reviews, and SASS/Grunt automation",
-                "Worked on architecture for a new, in-house CMS",
-                "Helped with interviews and communication with other department heads/overseeing project meetings when the HoD was unavailable"
+                {
+                    "title": "Leadership in CMS Development at Forbes",
+                    "point": "Served as the lead developer for Forbes' WordPress CMS and Falcon CMS, steering the development and optimization of these critical content management systems."
+                },
+                {
+                    "title": "PHP Coding Standards and Automation",
+                    "point": "Established and enforced PHP coding standards, led code review processes, and implemented SASS/Grunt automation to enhance development workflows."
+                },
+                {
+                    "title": "Architecture Development for New CMS",
+                    "point": "Played a key role in architecting a new, in-house CMS, focusing on scalability and user experience."
+                },
+                {
+                    "title": "Leadership and Cross-Departmental Collaboration",
+                    "point": "Actively participated in interviewing candidates and facilitated communication with other department heads."
+                }
             ]
         }
     ],
-    "projects": [
+    "additional_experience": [
         {
             "title": "Gamers' Plane",
             "tag": "RPG Play-by-Post Website",
@@ -98,9 +175,7 @@
                 "link": "https://github.com/rohitsodhia/gamersplane.v1"
             },
             "blurb": "Gamers’ Plane is a website that runs on a PHP API drawing from a MySQL and MongoDB database, feeding an AngularJS frontend. It’s currently being refactored to use FastAPI and NextJS frontend, adding a Redis cache, powered by Docker. It is a solo project, in which I do development, design, marketing, etc, and averages about 500 users a day."
-        }
-    ],
-    "technical_positions": [
+        },
         {
             "title": "John Wick Presents",
             "role": "Digital Consultant",
